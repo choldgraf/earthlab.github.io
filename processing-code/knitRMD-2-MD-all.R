@@ -9,16 +9,22 @@
 require(knitr)
 dirs <- c("course-materials/geog-4100-5100/co-floods-1-intro",
           "course-materials/geog-4100-5100/co-floods-2-data-r",
-          "course-materials/geog-4100-5100/intro-knitr-rmd")
+          "course-materials/geog-4100-5100/intro-knitr-rmd",
+          "course-materials/setup-r-rstudio")
+
+# is it a draft or a final
+post.dirs <- c("_drafts", "_posts")
+
+post.dir <- post.dirs[1]
 
 #################### Set up Input Variables #############################
 # set directory that  you'd like to build
-subDir <- dirs[3]
+subDir <- dirs[4]
 
 # Inputs - Where the git repo is on your computer
 # rmdRepoPath <-"~/Documents/github/R-Spatio-Temporal-Data-and-Management-Intro/"
-gitRepoPath <-"~/Documents/github/dev-earthlab-site"
-rmdRepoPath <- file.path(gitRepoPath, "_posts", subDir)# they are the same this time. 
+gitRepoPath <-"~/Documents/github/earthlab.github.io"
+rmdRepoPath <- file.path(gitRepoPath, post.dir, subDir)# they are the same this time. 
 
 # jekyll will only render md posts that begin with a date. Add one.
 add.date <- "2016-12-06-"
@@ -33,7 +39,7 @@ wd <- "~/Documents/data"
 setwd(wd)
 
 # don't change - this is the posts dir location required by jekyll
-postsDir <- file.path("_posts", subDir)
+postsDir <- file.path(post.dir, subDir)
 codeDir <- file.path("code/R", subDir)
 
 # images path
