@@ -548,9 +548,6 @@ body:hover .visually-hidden button {
 .fa-4 {
   font-size: 1.5em; }
 
-/*
-   Icons
-   ========================================================================== */
 .icon {
   display: inline-block;
   fill: currentColor;
@@ -1446,19 +1443,6 @@ tr, td, th {
   .page__footer .fa {
     color: #9ba1a6; }
 
-/* Literal.Number.Integer.Long */
-/* ==========================================================================
-   Syntax highlighting
-   ========================================================================== */
-kbd {
-  background-color: #333;
-  border-radius: 3px;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) inset;
-  color: #fff;
-  font-size: 65%;
-  padding: 2px 4px; }
-
-
 .page__footer-copyright {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.6875em; }
@@ -1490,7 +1474,7 @@ div.highlighter-rouge, figure.highlight {
   padding: 1em;
   border: 1px solid #f2f3f3;
   border-radius: 4px;
-  background-color: #3f3f3f;
+  background-color: #1a1a1a;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125); }
   div.highlighter-rouge:before, figure.highlight:before {
     position: absolute;
@@ -1508,7 +1492,7 @@ div.highlighter-rouge, figure.highlight {
     margin: 0;
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     font-size: 0.6875em;
-    line-height: 1.8; }
+    line-height: 1.4; }
 
 .highlight table td {
   padding: 5px; }
@@ -1518,7 +1502,7 @@ div.highlighter-rouge, figure.highlight {
 
 .highlight code, .highlight pre {
   color: #fdce93;
-  background-color: #3f3f3f; }
+  background-color: #1a1a1a; }
 
 .highlight .hll {
   background-color: #222; }
@@ -1549,7 +1533,7 @@ div.highlighter-rouge, figure.highlight {
   color: #ccc; }
 
 .highlight .p {
-  color: #41706f; }
+  color: #00cc99; }
 
 .highlight .cm {
   color: #7f9f7f; }
@@ -1558,7 +1542,7 @@ div.highlighter-rouge, figure.highlight {
   color: #7f9f7f; }
 
 .highlight .c1 {
-  color: #7f9f7f; }
+  color: #99b299; }
 
 .highlight .cs {
   color: #cd0000;
@@ -1735,6 +1719,17 @@ div.highlighter-rouge, figure.highlight {
 
 .highlight .il {
   color: #8cd0d3; }
+
+/* ==========================================================================
+   Syntax highlighting
+   ========================================================================== */
+kbd {
+  background-color: #333;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) inset;
+  color: #fff;
+  font-size: 65%;
+  padding: 2px 4px; }
 
 /* ==========================================================================
    Forms
