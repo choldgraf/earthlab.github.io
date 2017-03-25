@@ -6,3 +6,6 @@ _site/
 *.Rproj
 .Rhistory
 pdf/
+
+# Python
+.ipynb_checkpoints
